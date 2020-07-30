@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests" thread-count="3">
+    
+  <test  name="TestOnie">
+     <parameter name="browserName" value="ie"/>
+    <classes>
+      <class name="demo.MultiBrowserDemo"/>
+    </classes>
+  </test>
+  
+  <test  name="TestOnchrome">
+     <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="demo.MultiBrowserDemo"/>
+    </classes>
+  </test>
+  
+  <test  name="Testonff">
+     <parameter name="browserName" value="ff"/>
+    <classes>
+      <class name="demo.MultiBrowserDemo"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->
